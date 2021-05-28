@@ -424,7 +424,6 @@
 		});
 
 		getMessage = () => {
-			$('#messageWedding').empty()
 			$.ajax({
 				type: "GET",
 				url: "https://tokodean.com/api/handleMessage",
@@ -434,6 +433,7 @@
 						$('#boxMessage').attr('hidden', true)
 					}
 					else {
+						$('#messageWedding').empty()
 						response.forEach((resp, i) => {
 							$('#messageWedding').append(`
 							<div class="d-flex">
