@@ -6,7 +6,7 @@
    
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
-    <title>Wedding Ika Noviyanti & Agus Suandi</title>  
+    <title>The Wedding of Ika &amp; Agus</title>  
 	<meta name="Ika Noviyanti & Agus Suandi" content="Ika Noviyanti & Agus Suandi">
 	<meta name="title" content="Wedding Ika Noviyanti & Agus Suandi">
     <meta name="description" content="Wedding Ika Noviyanti & Agus Suandi">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-
+	<audio id="player" muted autoplay controls><source src="audio/IWannaGrowOldWithYouWestlife.mp3" type="audio/mp3"></audio>
     <div id="preloader">
 		<div class="preloader pulse">
 			<h3>Ika Noviyanti & Agus Suandi</h3>
@@ -152,7 +152,7 @@
 								<span>2010</span>
 							</div>
 							<div class="image">
-								<img src="images/first-meet.jpg" alt="" />
+								<img src="images/first-meet.jpg" alt="first meet" />
 								<div class="title">
 									<h2>First Meet</h2>
 								</div>
@@ -167,9 +167,9 @@
 								<span>2011</span>
 							</div>
 							<div class="image">
-								<img src="images/dating.jpg" alt="" />
+								<img src="images/dating.jpg" alt="dating" />
 								<div class="title">
-									<h2>First date</h2>
+									<h2>Dating</h2>
 								</div>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 								<span>2012</span>
 							</div>
 							<div class="image">
-								<img src="images/breakup.jpg" alt="" />
+								<img src="images/breakup.jpg" alt="break up" />
 								<div class="title">
 									<h2>Breakup</h2>
 								</div>
@@ -197,7 +197,7 @@
 								<span>2015</span>
 							</div>
 							<div class="image">
-								<img src="images/back-to-you.jpg" alt="" />
+								<img src="images/back-to-you.jpg" alt="back to you" />
 								<div class="title">
 									<h2>Back To You</h2>
 								</div>
@@ -207,12 +207,12 @@
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
 						<div class="caption">
 							<div class="star center-block">
-								<span class="h3">04</span>
-								<span>July</span>
-								<span>2017</span>
+								<span class="h3">16</span>
+								<span>Aug</span>
+								<span>2020</span>
 							</div>
 							<div class="image">
-								<img src="images/engagement.jpg" alt="" />
+								<img src="images/engagement.jpg" alt="engagement" />
 								<div class="title">
 									<h2>Engagement</h2>
 								</div>
@@ -227,7 +227,7 @@
 								<span>2021</span>
 							</div>
 							<div class="image">
-								<img src="images/wedding.jpg" alt="" />
+								<img src="images/wedding.jpg" alt="wedding" />
 								<div class="title">
 									<h2>Wedding</h2>
 								</div>
@@ -422,6 +422,7 @@
 	<script>
 		$(document).ready(function() {
 			getMessage()
+			document.getElementById('player').play()
 		});
 
 		getMessage = () => {
