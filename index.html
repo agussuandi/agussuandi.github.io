@@ -241,7 +241,7 @@
 				</div>
 			</div>
 			<div class="text-center">
-				<video height="300" controls>
+				<video height="300" id="videoweb" controls>
 					<source src="videos/our-videos.mp4" type="video/mp4">
 				</video>
 			</div>
@@ -412,7 +412,16 @@
     <script src="js/custom.js"></script>
 
 	<script>
-		var video = document.getElementById('audioweb');
+		var audio = document.getElementById('audioweb');
+		var video = document.getElementById('videoweb');
+		setInterval(() => {
+			if (video.currentTime > 0 && !video.paused) {
+				audio.pause();
+			}
+			else if (audio.currentTime > 0 && video.paused) {
+				audio.play();
+			}
+		}, 100);
 		$(document).ready(function() {
 			getMessage()
 		});
@@ -421,8 +430,8 @@
 			$('.preloader').fadeOut(); 
 			$('#preloader').delay(550).fadeOut('slow'); 
 			$('body').delay(450).css({'overflow':'visible'});
-			video.muted = false;
-			video.play();
+			audio.muted = false;
+			audio.play();
 		}
 		// document.addEventListener('click', () => {
   		// 	this.player.muted = false; 
